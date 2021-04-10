@@ -1,0 +1,300 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400:600);
+
+.überschrift {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(43,45,47,0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(43,45,47);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(43,45,47,0.6); 
+}
+
+* {
+   border: 0; /* Die Browser Paddings und Margins werden auf 0 gestellt */
+   margin: 0;
+   padding: 0;
+   font-family: "Lato";
+}
+
+.navbar {
+  list-style: none;
+  background-color: #2B2D2F;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.5);
+  /* border-bottom: 1px solid #000000; */
+}
+  
+.navbar li{
+ display: inline-block;
+ width: 8%;
+ margin-right: 0px;
+ background-color: #2B2D2F;
+ padding-left: 27px;
+}
+
+.pressed{
+  background-color: rgb(255,255,255,0.2);
+}
+
+a:hover {
+  background-color: rgb(255,0,88,0.8);
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff; 
+  padding: 20px; /* Höhe des Navigation bars */
+  padding-left: 10px;
+  margin-left: -30px;
+  font-size: 20px;
+  transition: all 400ms ease-in;
+}
+
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+
+.header2 {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(0,172,193,1) 50%, rgba(84,58,183,1) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.button{
+  background-color: #ffffff; 
+  border: 2px solid rgb(255,0,88,0.8);
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: "Lato";
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 400ms ease-in;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.überschrift h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.überschrift p {
+ color: #fff;
+ font-size: 16px;
+}
+
+
+/* ================================================================= */
+
+.body2 {
+  margin: 0;
+  font-family: "Lato";
+  background: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 150px 0; /* Wie sehr die Textboxen verschoben werden*/
+}
+
+.conteiner {
+  padding: 25px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.conteiner.left {
+  left: 0%;
+}
+
+.conteiner.right {
+  left: 50%;
+}
+
+.conteiner .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 11px);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.conteiner.left .date {
+  right: -35px; /* Abstand des Datum Rechts */
+}
+
+.conteiner.right .date {
+  left: -35px;
+}
+
+.conteiner .content {
+  padding: 30px 90px 30px 30px;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  position: relative;
+  border-radius:  0px 50px 50px 0px ; /* Welchen Radius die Textboxen haben */
+  box-shadow: 10px 10px 5px rgba(43,45,47,0.4);
+  border: 1px solid #ffffff;
+}
+
+.conteiner.right .content {
+  padding: 30px 90px 30px 30px;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.conteiner .content h2 {
+  margin: 0 0px 5px 10px; 
+  font-size: 18px;
+  font-weight: 400px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+h2 {
+  padding-left: 40px;
+}
+
+.conteiner .content p {
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  color: #ffffff;
+}
