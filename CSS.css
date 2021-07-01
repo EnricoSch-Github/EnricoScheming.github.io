@@ -242,22 +242,22 @@ p {
   padding: 150px 0; /* Wie sehr die Textboxen verschoben werden*/
 }
 
-.conteiner {
+.container2 {
   padding: 25px 30px;
   position: relative;
   background: inherit;
   width: 50%;
 }
 
-.conteiner.left {
+.container2.left {
   left: 0%;
 }
 
-.conteiner.right {
+.container2.right {
   left: 50%;
 }
 
-.conteiner .date {
+.container2 .date {
   position: absolute;
   display: inline-block;
   top: calc(50% - 11px);
@@ -270,29 +270,31 @@ p {
   z-index: 1;
 }
 
-.conteiner.left .date {
+.container2.left .date {
   right: -35px; /* Abstand des Datum Rechts */
 }
 
-.conteiner.right .date {
+.container2.right .date {
   left: -35px;
 }
 
-.conteiner .content {
+.container2 .content {
   padding: 30px 90px 30px 30px;
-  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  background: linear-gradient(315deg, #03a9f4 30%, #ff0058);
   position: relative;
+  background-size: 150% 150%;
   border-radius:  0px 50px 50px 0px ; /* Welchen Radius die Textboxen haben */
   box-shadow: 10px 10px 5px rgba(43,45,47,0.4);
   border: 1px solid #000000;
 }
 
-.conteiner.right .content {
+
+.container2.right .content {
   padding: 30px 90px 30px 30px;
   border-radius: 50px 0px 0px 50px;
 }
 
-.conteiner .content h2 {
+.container2 .content h2 {
   margin: 0 0px 5px 10px; 
   font-size: 18px;
   font-weight: 400px;
@@ -304,7 +306,7 @@ h2 {
   padding-left: 40px;
 }
 
-.conteiner .content p {
+.container2 .content p {
   margin-left: 30px;
   font-size: 16px;
   line-height: 22px;
